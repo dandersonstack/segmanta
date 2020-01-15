@@ -7,16 +7,18 @@ import NpsQuestion from "./Questions/NpsQuestion";
 import NpsQuestionResults from './Questions/NpsQuestionResults';
 
 function App() {
+  const updateTotal = ()=>{console.log('add some logic here to handle the state')};
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Tabs>
           <div label="NPS Questions">
-            <NpsQuestion title={"How much would a wood chuck chuck if a wood chuck could chuck wood?"}/>
+            <NpsQuestion title={"How much would a wood chuck chuck if a wood chuck could chuck wood?"}
+                          submit={updateTotal}/>
           </div>
           <div label="Results">
-            <NpsQuestionResults />
+            <NpsQuestionResults total={47}/>
             After &apos;while, <em>Crocodile</em>!
           </div>
         </Tabs>

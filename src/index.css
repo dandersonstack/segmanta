@@ -31,3 +31,10 @@ code {
   border-bottom: solid blue !important;
   border-width: 1px 1px 0 1px;
 }
+
+.fl-left {
+ float: left;
+}
+.fl-right {
+  float: right;
+}

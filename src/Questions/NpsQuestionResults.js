@@ -3,11 +3,12 @@ import propTypes from 'prop-types';
 
 
 function NpsQuestionResults(props) {
+    const {total} = props;
     return (
         <div className="container">
             <div className="overview">
                 <p>NPS Score</p>
-                <p>47</p>
+                <p>{total}</p>
             </div>
             <ol className="sections">
                 <div>
