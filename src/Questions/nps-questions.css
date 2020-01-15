@@ -1,0 +1,32 @@
+.container {
+    color: black;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.options-list {
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.option {
+    display: flex;
+    height: 50px;
+    width: 45px;
+    background: lightgrey;
+    text-align: center;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.option-active {
+    background: darkgrey;
+}
+
+.option-title {
+    flex: auto;
+    padding: 14px;
+    color: black;
+}
