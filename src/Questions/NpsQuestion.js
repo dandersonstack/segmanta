@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import propTypes from 'prop-types';
 import styles from './nps-questions.css';
 import NpsQuestionResults from "./NpsQuestionResults";
-import NpsQuestionOption from "./NpsQuestionOption";
+import Button from "@material-ui/core/Button";
 
 
 function NpsQuestion(props) {
@@ -11,22 +11,33 @@ function NpsQuestion(props) {
     const options = [1,2,3,4,5,6,7,8,9,10];
     const {title} = props;
     return (
-        <div className="container">
-            <h3 className="title">
+        <div className="nps-container">
+            <h3 className="nps-title">
                 {title}
             </h3>
-            <div className="options-list">
+            <div className="nps-options-list">
                 {
                     options.map((option)=>{
                         return (
-                            <NpsQuestionOption value={option}/>
+                            <Button variant="contained"
+                                    color="primary"
+                                    onClick={(event)=>{setSelected(option)}}
+                                    style={{margin: "2px 3px"}}>
+                                {option}
+                            </Button>
                         )
                     })
                 }
-
+                <div className="options-list-footer">
+                    <p style={{"float":"left"}}>Not Likely</p><p style={{"float":"right"}}>Very Likely</p>
+                </div>
             </div>
-            <p>Not Likely</p><p>Very Likely</p>
-            <button className="submit" onClick={() => setSelected(selected + 1)}>Submit</button>
+
+            <div className="nps-question-footer">
+                <Button variant="contained"  color="primary" style={{width:"10%"}}>
+                    Submit
+                </Button>
+            </div>
         </div>
     );
 }

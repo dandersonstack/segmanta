@@ -1,24 +1,25 @@
-.container {
+.nps-container {
     color: black;
     display:flex;
     flex-direction: column;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
+.nps-title {
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 8%;
+}
 
-.options-list {
-    display: flex;
+.nps-options-list {
     margin-right: 5%;
     margin-left: 5%;
 }
 
 .option {
-    display: flex;
-    height: 50px;
-    width: 45px;
-    background: lightgrey;
-    text-align: center;
-    margin: 10px;
-    flex-grow: 1;
+    margin-right: 3px;
+    margin-left: 3px;
 }
 
 .option-active {
@@ -29,4 +30,14 @@
     flex: auto;
     padding: 14px;
     color: black;
+}
+
+.options-list-footer {
+    font-size: .8em;
+    color: grey;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.nps-question-footer {
+
 }
