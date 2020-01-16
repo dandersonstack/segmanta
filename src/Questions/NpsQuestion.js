@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import propTypes from 'prop-types';
 import styles from './nps-questions.css';
 import Button from "@material-ui/core/Button";
-
+const possibleRatings = [1,2,3,4,5,6,7,8,9,10];
 
 function NpsQuestion(props) {
     // Declare a new state variable, which we'll call "count"
     const [selected, setSelected] = useState(0);
-    const possibleRatings = [1,2,3,4,5,6,7,8,9,10];
     const {title, submit} = props;
     return (
         <div className="nps-container">
@@ -17,9 +16,10 @@ function NpsQuestion(props) {
             <div className="nps-options-list">
                 {
                     possibleRatings.map((rating)=>{
+                        const color = selected==rating?"primary":"default";
                         return (
                             <Button variant="contained"
-                                    color="default"
+                                    color={color}
                                     onClick={()=>{setSelected(rating)}}
                                     style={{margin: "2px 3px"}}>
                                 {rating}

@@ -16,11 +16,15 @@ code {
 }
 .tab-list {
   border-bottom: 1px solid #ccc;
+}
+
+.tab-content {
   color: black;
 }
 
 .tab-list-item {
   display: inline-block;
+  color: black;
   list-style: none;
   margin-bottom: -1px;
   padding: 0.5rem 0.75rem;

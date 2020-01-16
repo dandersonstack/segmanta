@@ -19,7 +19,6 @@ function App() {
           </div>
           <div label="Results">
             <NpsQuestionResults total={47}/>
-            After &apos;while, <em>Crocodile</em>!
           </div>
         </Tabs>
       </header>

@@ -1,5 +1,5 @@
 .nps-container {
-    color: black;
+
     display:flex;
     flex-direction: column;
     margin-right: 30px;
@@ -24,12 +24,6 @@
 
 .option-active {
     background: darkgrey;
-}
-
-.option-title {
-    flex: auto;
-    padding: 14px;
-    color: black;
 }
 
 .options-list-footer {
