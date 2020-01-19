@@ -16,7 +16,7 @@ function NpsQuestion(props) {
             <div className="nps-options-list">
                 {
                     possibleRatings.map((rating)=>{
-                        const color = selected==rating?"primary":"default";
+                        const color = selected===rating?"primary":"default";
                         return (
                             <Button variant="contained"
                                     color={color}

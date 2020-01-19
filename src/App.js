@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './segmenta-logo.png';
 import './App.css';
 
@@ -7,7 +7,9 @@ import NpsQuestion from "./Questions/NpsQuestion";
 import NpsQuestionResults from './Questions/NpsQuestionResults';
 
 function App() {
-  const updateTotal = ()=>{console.log('add some logic here to handle the state')};
+  // const updateTotal = ()=>{console.log('add some logic here to handle the state')};
+  const [total, updateTotal] = useState(0);
+
   return (
     <div className="App">
       <header className="App-header">

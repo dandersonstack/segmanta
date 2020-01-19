@@ -1,5 +1,4 @@
 .nps-container {
-
     display:flex;
     flex-direction: column;
     margin-right: 30px;
@@ -31,7 +30,4 @@
     color: grey;
     margin-right: 3%;
     margin-left: 3%;
-}
-.nps-question-footer {
-
 }
